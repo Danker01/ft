@@ -1,0 +1,170 @@
+<!Doctype HTML>
+
+<html>
+
+	<head>
+		<title>Давай Знайомитись</title>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="images/ico.png" type="image/png">
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+nav a { text-decoration: none; }
+nav a {
+	cursor:url('images/cursor.png'), pointer;
+			 
+	margin: 15px 25px;
+	padding: 15px 20px;
+	border-radius: 10px;
+	color: #047681;
+}
+nav a {
+	border: 2px solid #fee3de;
+	color: #fee3de;
+	background-color:#047681;
+}
+ol{
+	list-style-type: upper-roman;
+}
+
+/* після цього коментаря я починаю створювати класи*/
+
+.PMS {
+	list-style-position: inside;
+	width: 290px;
+}
+.PMS:hover li { color:white;
+				background-color: Teal;
+				text-align: center;}
+/*роблю все до центру*/
+.face_point{
+	margin: auto;/*автоматичне виравнювання до центру*/
+	list-style-position: inside;
+	list-style-image: url(images/face_point.png);
+	width: 290px;/*встановлення ширини 290 пікселів*/
+}
+.face_point a:hover{
+	color: white;
+	cursor:url('images/cursor.png'), pointer;
+}/*зміна кольору при наведенні*/
+.face_point li{
+	background-color: Teal;/* установка кольору*/
+	 margin-bottom: 1px; /*pxустановка відстані між пунтами 1 піксель*/
+}
+.face_point a{
+	text-decoration: none; 
+	color: black;
+}
+
+/*роблю все до правого краю*/
+
+.rt{
+	text-align: right;
+	margin-right: 70px;
+}
+.ct{
+	text-align: center;
+	margin-left: 20px;
+}
+.hands_point{
+	margin-left: auto;
+	list-style-position: inside;
+	list-style-image: url(images/hands_point.png);
+	width: 300px;/*встановлення ширини 290 пікселів*/
+}
+.hands_point a:hover {
+	cursor:url('images/cursor.png'), pointer;
+	color: blue;
+	font-size:20px;
+	text-decoration: underline;
+	font-family: 'Lobster', cursive;
+	}/*зміна кольору при наведенні*/
+.hands_point a{
+	text-decoration: none; 
+	color: black;
+}
+.hands_point li{
+	background-color: MistyRose;/* установка кольору*/
+	margin-bottom: 1px;/* установка відстані між пунтами 1 піксель*/
+}
+/* роблю все для центрування*/
+
+.Ci {
+	text-align: center;
+}
+.Ci img{
+	vertical-align: middle;
+}
+.img{
+	margin: auto;
+	height: 279px; /* Высота блока */
+    width: 278px; /* Ширина блока */
+	background-image: url("images/logo.png");
+}
+.img:hover{
+	margin: auto;
+	height: 279px; /* Высота блока */
+    width: 277px; /* Ширина блока */
+	background-image: url("images/logo2.png");
+}
+#BC{
+background: rgb(0,0,255);
+background: linear-gradient(180deg, rgba(0,0,255,1) 50%, rgba(255,239,0,1) 50%);
+}
+		</style>
+	</head>
+	
+	<body id="BC">
+		<header>
+			<nav >
+				<a class="a" href="#MCH">ГОЛОВНА</a>
+				<a class="a" href="#SMYF">ПРО НАС</a>
+				<a class="a" href="#SMM">КОНТАКТИ</a>
+			</nav>
+			<div class="Ci">
+				<div class="img"></div>
+				<br>
+				<img src="images/label.png">
+			</div>	
+		</header>
+		
+		
+		<main>
+		<h2>5 Моїх Щоденних Нагадувань</h2>
+		<section class="PMS" id="MCH">
+		<ol>
+			<li>Я дивовижний</li>
+			<li>Я можу зробити все</li>
+			<li>Бути щасливим - це вибір</li>
+			<li>Я унікальний</li>
+			<li>Я готуюсь до успіху</li>
+		</ol>
+		</section>
+		
+		<section id="SMYF">
+		<h2 class="ct">Список моїх улюбленних фільмів</h2>
+		<ul class="face_point">
+			<a href="https://megogo.net/ua/view/1650191-korol-lev.html" target="_blank"><li>Король Лев</li></a>
+			<a href="https://megogo.net/ua/view/3434041-vall-i.html" target="_blank"><li>Волл-І</li></a>
+			<a href="https://megogo.net/ua/view/942661-aladdin.html" target="_blank"><li>Аладін</li></a>
+			<a href="https://megogo.net/ua/view/1681321-korporaciya-monstriv.html" target="_blank"><li>Корпорація монстрів</li></a>
+			<a href="https://megogo.net/ua/search-extended?q=%D0%A1%D1%83%D0%BF%D0%B5%D1%80+%D0%A1%D1%96%D0%BC%D0%B5%D0%B9%D0%BA%D0%B0" target="_blank"><li>Супер Сімейка</li></a>
+		</ul>
+		</section>
+		
+		<section id="SMM">
+			<h2 class="rt">Список моєї музики</h2>
+			<ul class="hands_point">
+				<a href="https://music.youtube.com/watch?v=MAe325dOhlo" target="_blank"><li>A whole new world</li></a>
+				<a href="https://music.youtube.com/watch?v=MpLnqOvGuMs" target="_blank"><li>Colors of the wind</li></a>
+				<a href="https://music.youtube.com/watch?v=5vETwZfmRgM" target="_blank"><li>Beauty and the beast</li></a>
+				<a href="https://music.youtube.com/watch?v=2hu3RidUqCo" target="_blank"><li>Under the sea</li></a>
+				<a href="https://music.youtube.com/watch?v=2QA9ecY2BNU" target="_blank"><li>Can you feel the love tonight</li></a>
+			</ul>
+		
+		</section>
+
+		</main>		
+		
+	</body>
+
+</html>
